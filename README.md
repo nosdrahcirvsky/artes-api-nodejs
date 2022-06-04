@@ -22,3 +22,7 @@ A API é bem simples e consiste em apenas duas rotas: /api/ e /api/filter/:field
 
 - localhost:4000/api/ -- acessa a [API pública do Instituto de Artes de Chicago](https://www.artic.edu/open-access/public-api) e retorna um array em JSON das obras com os campos `id`, `title`, `artist_title` e `date_start`.
 - localhost:4000/api/filter/:field -- filtra os resultados por campo e salva a consulta realizada no banco de dados. Substitua `:field` por algum campo da API pública. Uma lista com todos eles pode ser encontrada [aqui](https://api.artic.edu/docs/#collections-2).
+
+## Frontend
+
+O frontend para ser usado em conjunto com esta API encontra-se [aqui](https://github.com/nosdrahcirvsky/artes-api-fetch).
