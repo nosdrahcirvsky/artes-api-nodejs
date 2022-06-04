@@ -12,9 +12,9 @@ O projeto foi desenvolvido usando:
 - NPM v8.5.3
 - MySQL v8
 
-Primeiramente, é necessário criar banco no MySQL chamado `consultasdb`. Após isso, instalar as dependências do projeto com `npm install` e, finalmente, iniciar o sistema com `node server.js` ou `nodemon server.js` (caso tenha o nodemon instalado).
+Primeiramente, é necessário criar o banco no MySQL chamado `consultasdb`. Após isso, instalar as dependências do projeto com `npm install` e, finalmente, iniciar o sistema com `node server.js` ou `nodemon server.js` (caso tenha o nodemon instalado).
 
-> Nota: Após rodar o projeto pela primeira vez e o Sequelize criar a tabela `consulta` no DB, comente a linha 27 onde está `db.sequelize.sync({ alter: true });` no arquivo `server.js`, pois não será mais necessário alterar a tabela já criada.
+> Nota: Após rodar o projeto pela primeira vez e o Sequelize criar a tabela `consulta` no DB, comente a linha 27 -- onde está `db.sequelize.sync({ alter: true });` -- no arquivo `server.js`, pois não será mais necessário alterar a tabela já criada.
 
 ## Uso
 
