@@ -6,7 +6,11 @@ Projeto solicitado para a vaga de estágio da Marques Consult.
 
 ## Instalação
 
-> O projeto foi desenvolvido usando o Nodejs v16.15.1 e o NPM v8.5.3 e MySQL v8
+O projeto foi desenvolvido usando:
+
+- Nodejs v16.15.1
+- NPM v8.5.3
+- MySQL v8
 
 Primeiramente, é necessário criar um novo banco no MySQL chamado `consultasdb`. Após isso, instalar as dependências do projeto com `npm install` e, finalmente, iniciar o sistema com `node server.js` ou `nodemon server.js` (caso tenha o nodemon instalado).
 
