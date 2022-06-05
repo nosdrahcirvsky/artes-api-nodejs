@@ -10,7 +10,12 @@ exports.findAll = (req, res) => {
 
   request(options, function (error, response) {
     if (error) throw new Error(error);
-    res.send(JSON.parse(response.body));
+
+    // Converte o corpo para JSON
+    let result = JSON.parse(response.body);
+
+    // Retorna o array com os resultados da API
+    res.send(result.data);
   })
 };
 
@@ -27,7 +32,10 @@ exports.filterBy = (req, res) => {
     // Salva os parâmetros da consulta no DB
     Consulta.create(req, res);
 
-    // Retorna os resultados da API
-    res.send(JSON.parse(response.body));
+    // Converte o corpo para JSON
+    let result = JSON.parse(response.body);
+
+    // Retorna o array com os resultados da API
+    res.send(result.data);
   })
 };
